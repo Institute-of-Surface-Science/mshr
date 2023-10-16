@@ -1,0 +1,16 @@
+{
+    "pybind11" : { "found"        : ${pybind11_FOUND},
+		   "version"      : "${pybind11_VERSION}",
+		   "include_dir"  : "${pybind11_INCLUDE_DIRS}",
+		   "include_dirs" : "${pybind11_INCLUDE_DIR}",
+		   "definitions"  : "${pybind11_DEFINITIONS}"
+                 },
+    "dolfin"   : { "found"        : ${DOLFIN_FOUND},
+		   "include_dirs" : "${DOLFIN_INCLUDE_DIRS}"
+		 },
+    "mshr"     : { "found"        : ${mshr_FOUND},
+		   "include_dirs" : "${mshr_INCLUDE_DIRS}",
+		   "lib_dirs"     : "${mshr_LIBRARIES_DIRS}",
+		   "libs"         : "${mshr_LIBRARIES}"
+		 }
+}
